@@ -1,0 +1,992 @@
+  transactionHash: '0x764e7c4655fa48558d4c65350a86558d67775ce5f875bf17bde7509e2f8594ab',
+  logIndex: 139,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x12c87f95a3e1a9f3d6841786ac2425a3ab8c0a6810478204e94f13a7b7aaab20',
+    BigNumber {
+      _hex: '0x14e200a69833b9fda816f1bfc79517e7932e64708df0dd',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x12c87f95a3e1a9f3d6841786ac2425a3ab8c0a6810478204e94f13a7b7aaab20',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x14e200a69833b9fda816f1bfc79517e7932e64708df0dd',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x74ebc6f10438e4b7224a7865b1f98de15134e6a9811f33cecd57fb5554fb1d54
+Parameter 2: 2815812023305960379473080668951132802633939515706139050
+Parameter 3: 452312853830057266391265637218342475278870352242325914085026338558584374476
+Parameter 4: 74258126130563206708120239862433717554001997639743
+Event Details: {
+  blockNumber: 19530407,
+  blockHash: '0x4ee4d3965ef9ffc7323d1b690d99ad2c6b754c41882bd0a9d995b28d35faa17d',
+  transactionIndex: 26,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x74ebc6f10438e4b7224a7865b1f98de15134e6a9811f33cecd57fb5554fb1d540000000000000000001d6600c502c07f7f537f47470071fd59cd8287238761aa0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc000000000000000000000032cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x617e7f11c0b80ae6d4e5b6a4295b760bbaa1a30e1f7546cdc3684e9b5e936331',
+  logIndex: 73,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x74ebc6f10438e4b7224a7865b1f98de15134e6a9811f33cecd57fb5554fb1d54',
+    BigNumber {
+      _hex: '0x1d6600c502c07f7f537f47470071fd59cd8287238761aa',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x74ebc6f10438e4b7224a7865b1f98de15134e6a9811f33cecd57fb5554fb1d54',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x1d6600c502c07f7f537f47470071fd59cd8287238761aa',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x00b39b64b1f5ad990e01aacb20d047673020e663cb3606893447a2bc77f42d28
+Parameter 2: 2596563162117188007697927438784889450408733934675615598
+Parameter 3: 452312853830057266391265637218342475278870352242325914085026338558584374476
+Parameter 4: 74258126130563206708120239862433717554001997639743
+Event Details: {
+  blockNumber: 19530410,
+  blockHash: '0xae68739eb54e99fbe1cdf27a808232d438b3ef800a20197f53cbce9f51657e9b',
+  transactionIndex: 58,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x00b39b64b1f5ad990e01aacb20d047673020e663cb3606893447a2bc77f42d280000000000000000001b1c009c731c50fb63ee893121245b58816e212f64df6e0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc000000000000000000000032cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x60be3f55f96826c8353c04feea977b11b4e7f250ae45dac67dbd60d631de4f95',
+  logIndex: 113,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x00b39b64b1f5ad990e01aacb20d047673020e663cb3606893447a2bc77f42d28',
+    BigNumber {
+      _hex: '0x1b1c009c731c50fb63ee893121245b58816e212f64df6e',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x00b39b64b1f5ad990e01aacb20d047673020e663cb3606893447a2bc77f42d28',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x1b1c009c731c50fb63ee893121245b58816e212f64df6e',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x08177a6f4031fb8922d4725bd1912b25db99c8f5122d85baf6d3360a3b250da7
+Parameter 2: 944341056994422046632512926412168307329675908942159921
+Parameter 3: 452312849343247239785393678977866342313909810499055732039079820252641186608
+Parameter 4: 74089389661941703208282301172327342979370188522481
+Event Details: {
+  blockNumber: 19530411,
+  blockHash: '0x3e62108f8746a56d780e1d11e76172dfe40b0aceadbc3fa1a69a3b03b8bb36e4',
+  transactionIndex: 150,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x08177a6f4031fb8922d4725bd1912b25db99c8f5122d85baf6d3360a3b250da700000000000000000009dc005f1ee29361206f1a129e808736f11598356c6031010000000737693eb3340000e785e82358879f061bc3dcac6f0444462d4b5330000000000000000000000032b1ab2274b58b23d2a701f164b9a641efc69bc3f1',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0xeb2c0fbee71409b862baf2f9005792654068df843193726b2da0417cf70a94be',
+  logIndex: 325,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x08177a6f4031fb8922d4725bd1912b25db99c8f5122d85baf6d3360a3b250da7',
+    BigNumber {
+      _hex: '0x09dc005f1ee29361206f1a129e808736f11598356c6031',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x010000000737693eb3340000e785e82358879f061bc3dcac6f0444462d4b5330',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32b1ab2274b58b23d2a701f164b9a641efc69bc3f1',
+      _isBigNumber: true
+    },
+    orderHash: '0x08177a6f4031fb8922d4725bd1912b25db99c8f5122d85baf6d3360a3b250da7',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x09dc005f1ee29361206f1a129e808736f11598356c6031',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x010000000737693eb3340000e785e82358879f061bc3dcac6f0444462d4b5330',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32b1ab2274b58b23d2a701f164b9a641efc69bc3f1',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0xe7d34393a0039f300ac6630153546b84700e42d18e353de529a509949545edb5
+Parameter 2: 1635386014901349402174542011511072104505133977548288131
+Parameter 3: 452312848875566715839504743900465490515200724942836320901652150907538595203
+Parameter 4: 74275444135359338424673584034543015799890073779220
+Event Details: {
+  blockNumber: 19530411,
+  blockHash: '0x3e62108f8746a56d780e1d11e76172dfe40b0aceadbc3fa1a69a3b03b8bb36e4',
+  transactionIndex: 235,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0xe7d34393a0039f300ac6630153546b84700e42d18e353de529a509949545edb500000000000000000011130084e84e2dcd0d0f171f0202c69626c0a1945ef0830100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83000000000000000000000032d2421b10d40967800c6ada1d72dd979561b27c14',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0debc87d6a1fbbfb75f93978805340a39207bc807930eb550f99e05e72ef9296',
+  logIndex: 482,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0xe7d34393a0039f300ac6630153546b84700e42d18e353de529a509949545edb5',
+    BigNumber {
+      _hex: '0x11130084e84e2dcd0d0f171f0202c69626c0a1945ef083',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32d2421b10d40967800c6ada1d72dd979561b27c14',
+      _isBigNumber: true
+    },
+    orderHash: '0xe7d34393a0039f300ac6630153546b84700e42d18e353de529a509949545edb5',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x11130084e84e2dcd0d0f171f0202c69626c0a1945ef083',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32d2421b10d40967800c6ada1d72dd979561b27c14',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62
+Parameter 2: 1871471821505406484437975184377256319255584907363619192
+Parameter 3: 452312848875566715839504743900465490515200724942836320901652150907538595203
+Parameter 4: 74275444135359338424673584034543015799890073779220
+Event Details: {
+  blockNumber: 19530411,
+  blockHash: '0x3e62108f8746a56d780e1d11e76172dfe40b0aceadbc3fa1a69a3b03b8bb36e4',
+  transactionIndex: 235,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62000000000000000000138a00fbb016124b0a2c7a1faf0f4092c8bf0f4bf811780100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83000000000000000000000032d2421b10d40967800c6ada1d72dd979561b27c14',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0debc87d6a1fbbfb75f93978805340a39207bc807930eb550f99e05e72ef9296',
+  logIndex: 483,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62',
+    BigNumber {
+      _hex: '0x138a00fbb016124b0a2c7a1faf0f4092c8bf0f4bf81178',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32d2421b10d40967800c6ada1d72dd979561b27c14',
+      _isBigNumber: true
+    },
+    orderHash: '0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x138a00fbb016124b0a2c7a1faf0f4092c8bf0f4bf81178',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32d2421b10d40967800c6ada1d72dd979561b27c14',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62
+Parameter 2: 3041047275789285530147983193867458103433362860475421048
+Parameter 3: 452312848875566715839504743900465490515200724942836320901652150907538595203
+Parameter 4: 74275444135359338424673584034543015799890073779220
+Event Details: {
+  blockNumber: 19530411,
+  blockHash: '0x3e62108f8746a56d780e1d11e76172dfe40b0aceadbc3fa1a69a3b03b8bb36e4',
+  transactionIndex: 235,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b620000000000000000001fc000fbb016124b0a2c7a1faf0f4092c8bf0f4bf811780100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83000000000000000000000032d2421b10d40967800c6ada1d72dd979561b27c14',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0debc87d6a1fbbfb75f93978805340a39207bc807930eb550f99e05e72ef9296',
+  logIndex: 484,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62',
+    BigNumber {
+      _hex: '0x1fc000fbb016124b0a2c7a1faf0f4092c8bf0f4bf81178',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32d2421b10d40967800c6ada1d72dd979561b27c14',
+      _isBigNumber: true
+    },
+    orderHash: '0x57221e1f7faeb38d8a1c95c604cb7749a989c82aa89bd397239c4b567ba97b62',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x1fc000fbb016124b0a2c7a1faf0f4092c8bf0f4bf81178',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000002c68af0bb1400000c2e57efddba8c768147d1fdf9176a0a6ebd5d83',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32d2421b10d40967800c6ada1d72dd979561b27c14',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x81f763f7fe9cb3fc83f4e9d9396c8eedcd82e5e08f903ff7363724c93fb53b4b
+Parameter 2: 2911967139029235144267537501465202495063142629573616042
+Parameter 3: 452312853830057266391265637218342475278870352242325914085026338558584374476
+Parameter 4: 74258126130563206708120239862433717554001997639743
+Event Details: {
+  blockNumber: 19530414,
+  blockHash: '0xde16eb3b5b837889fd7cf65781638a97fb6bc8073ecf827b7234d6e6e0b5f6ba',
+  transactionIndex: 74,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x81f763f7fe9cb3fc83f4e9d9396c8eedcd82e5e08f903ff7363724c93fb53b4b0000000000000000001e6700c502c07f7f537f47470071fd59cd8287238761aa0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc000000000000000000000032cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x2e21ee1c43759c48c7272a46d55445ef0e135c5c3a3404c1f0cfdd84c56149b0',
+  logIndex: 190,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x81f763f7fe9cb3fc83f4e9d9396c8eedcd82e5e08f903ff7363724c93fb53b4b',
+    BigNumber {
+      _hex: '0x1e6700c502c07f7f537f47470071fd59cd8287238761aa',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x81f763f7fe9cb3fc83f4e9d9396c8eedcd82e5e08f903ff7363724c93fb53b4b',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x1e6700c502c07f7f537f47470071fd59cd8287238761aa',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698
+Parameter 2: 1548210191523314229632328139275573073689355960984264250
+Parameter 3: 452312853830057266391265637218342475278870352242325914085026338558584374476
+Parameter 4: 74258126130563206708120239862433717554001997639743
+Event Details: {
+  blockNumber: 19530415,
+  blockHash: '0xb428cd518b9dd0ecf93f79e6b078059dc2192b2c347e27a40ba467a82559b37a',
+  transactionIndex: 220,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698000000000000000000102a00667aad452d0f77dee7cc2d0fb7b20a2e0ce7de3a0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc000000000000000000000032cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x15c354b4afe66c2fa511ed72af82bbfeefeaffa5f33d1ab28a4082aa4a068ab7',
+  logIndex: 302,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698',
+    BigNumber {
+      _hex: '0x102a00667aad452d0f77dee7cc2d0fb7b20a2e0ce7de3a',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x102a00667aad452d0f77dee7cc2d0fb7b20a2e0ce7de3a',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x64aa61f3e2b649536773effcb9ceba1d434685faac98db5d10ac96d50be14b70
+Parameter 2: 1480863669769932921745631383443204286645756848386429208
+Parameter 3: 452312850030153009330918049211835124441965637624344401967080350450641390706
+Parameter 4: 73420918211425402912319302014243505020499750911445
+Event Details: {
+  blockNumber: 19530415,
+  blockHash: '0xb428cd518b9dd0ecf93f79e6b078059dc2192b2c347e27a40ba467a82559b37a',
+  transactionIndex: 226,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x64aa61f3e2b649536773effcb9ceba1d434685faac98db5d10ac96d50be14b700000000000000000000f76000a4a562e1d786dba307c1c0cb7cccc3383915118010000000dbd2fc137a300000000000000c26fabfe894d13233d5ec73f61cc720000000000000000000000323c93d68a4a17d424bbb7af949e0da8531a9d7dd5',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0xe1b8693ae2efc9e45557e34bb9b32b3a693e2c5fd8b342afcf6a4589d7efbf3d',
+  logIndex: 333,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x64aa61f3e2b649536773effcb9ceba1d434685faac98db5d10ac96d50be14b70',
+    BigNumber {
+      _hex: '0x0f76000a4a562e1d786dba307c1c0cb7cccc3383915118',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x010000000dbd2fc137a300000000000000c26fabfe894d13233d5ec73f61cc72',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x323c93d68a4a17d424bbb7af949e0da8531a9d7dd5',
+      _isBigNumber: true
+    },
+    orderHash: '0x64aa61f3e2b649536773effcb9ceba1d434685faac98db5d10ac96d50be14b70',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x0f76000a4a562e1d786dba307c1c0cb7cccc3383915118',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x010000000dbd2fc137a300000000000000c26fabfe894d13233d5ec73f61cc72',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x323c93d68a4a17d424bbb7af949e0da8531a9d7dd5',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698
+Parameter 2: 98774711710215245921332928538195686643702797083074106
+Parameter 3: 452312853830057266391265637218342475278870352242325914085026338558584374476
+Parameter 4: 74258126130563206708120239862433717554001997639743
+Event Details: {
+  blockNumber: 19530417,
+  blockHash: '0x43704a62a11b1fbc8495b3263d741ca31c29f23430eaec0e4e5238daf1032166',
+  transactionIndex: 157,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698000000000000000000010800667aad452d0f77dee7cc2d0fb7b20a2e0ce7de3a0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc000000000000000000000032cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0xededb036750b4ac4fa84bf89b0670d7a3b4ce340f2c35e492e91a7eb527f81c0',
+  logIndex: 222,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698',
+    BigNumber {
+      _hex: '0x010800667aad452d0f77dee7cc2d0fb7b20a2e0ce7de3a',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x841ea5be54d8451d31249b6ec48a0b21f72d44a4efdb6ffba98420c3f2186698',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x010800667aad452d0f77dee7cc2d0fb7b20a2e0ce7de3a',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031d23dfab7a70000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x443fce845f95b471765cb319418cb5d7078071ac18b4cf7d1993c60a33a0c874
+Parameter 2: 3679337057644110066151018835826445541214488004228777495
+Parameter 3: 452312853815442250017956608036305626951707522045766588655266338558584374476
+Parameter 4: 74258126130563206708120239862433717554001997639743
+Event Details: {
+  blockNumber: 19530420,
+  blockHash: '0x19028ff2f107f6693f3d8dd8f1e4f918acc6d298c1664b6f141c21b6b4d8bb24',
+  transactionIndex: 99,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x443fce845f95b471765cb319418cb5d7078071ac18b4cf7d1993c60a33a0c874000000000000000000266a00931385cb7beeef891184215b7a927631811786170100000031aeb70847e60000769272677fab02575e84945f03eca517acc544cc000000000000000000000032cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0401162683bf967a18d1ffb930f7b0f52eb4f25504c3ea0f4865d5194320d9f8',
+  logIndex: 258,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x443fce845f95b471765cb319418cb5d7078071ac18b4cf7d1993c60a33a0c874',
+    BigNumber {
+      _hex: '0x266a00931385cb7beeef891184215b7a92763181178617',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000031aeb70847e60000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    },
+    orderHash: '0x443fce845f95b471765cb319418cb5d7078071ac18b4cf7d1993c60a33a0c874',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x266a00931385cb7beeef891184215b7a92763181178617',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000031aeb70847e60000769272677fab02575e84945f03eca517acc544cc',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32cf398a1ed09a38613d2c76366e9a4b2cf21eb03f',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x0caaeef63b174202f1729b4cb7534c31fc9bda168e0b994d1df06e5a4d6cab86
+Parameter 2: 2878293891496559298607198701629142062311554270855731015
+Parameter 3: 452312848773261601226341540174687847252611538772048374484673556097881165954
+Parameter 4: 74163837902236819123485115744011583605473782794412
+Event Details: {
+  blockNumber: 19530425,
+  blockHash: '0x2ad439bcb8fecbd6668c66bf12bda0ddff9639f9110c20973db656b706764afb',
+  transactionIndex: 109,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x0caaeef63b174202f1729b4cb7534c31fc9bda168e0b994d1df06e5a4d6cab860000000000000000001e0d009940f2bb0729df48b270fd6f6021b4e0ce9497470100000001cdda4faccd00006c410cf0b8c113dc6a7641b431390b11d5515082000000000000000000000032beb5825772b52811c23a1389a391934ae71808ac',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0xaba0df39ec86fab725b03731f1043a37a129011615a50d93e79ea624a93e18a8',
+  logIndex: 194,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x0caaeef63b174202f1729b4cb7534c31fc9bda168e0b994d1df06e5a4d6cab86',
+    BigNumber {
+      _hex: '0x1e0d009940f2bb0729df48b270fd6f6021b4e0ce949747',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000001cdda4faccd00006c410cf0b8c113dc6a7641b431390b11d5515082',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32beb5825772b52811c23a1389a391934ae71808ac',
+      _isBigNumber: true
+    },
+    orderHash: '0x0caaeef63b174202f1729b4cb7534c31fc9bda168e0b994d1df06e5a4d6cab86',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x1e0d009940f2bb0729df48b270fd6f6021b4e0ce949747',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000001cdda4faccd00006c410cf0b8c113dc6a7641b431390b11d5515082',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32beb5825772b52811c23a1389a391934ae71808ac',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929
+Parameter 2: 680194923850248159623534261762450322963538330652968358
+Parameter 3: 452312848627111437493251248904324857404741556448663231078883777092052483051
+Parameter 4: 73338644638181625302637976392872249625279126748435
+Event Details: {
+  blockNumber: 19530430,
+  blockHash: '0x90471dd63eea9590bda4338ab93713b22722fd55546dc14a04ab6ae7f08b1a78',
+  transactionIndex: 39,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929000000000000000000071a0040c773d2ddd322a45c8ffd0b6f117d1cd91305a601000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb0000000000000000000000322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0fa3587f901f2a82760eba228790fcd6a7a1f3172b4ee1346ff42d23471dcdb2',
+  logIndex: 175,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929',
+    BigNumber {
+      _hex: '0x071a0040c773d2ddd322a45c8ffd0b6f117d1cd91305a6',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x01000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+      _isBigNumber: true
+    },
+    orderHash: '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x071a0040c773d2ddd322a45c8ffd0b6f117d1cd91305a6',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x01000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929
+Parameter 2: 577305208582152594181994849539223998379760679627457958
+Parameter 3: 452312848627111437493251248904324857404741556448663231078883777092052483051
+Parameter 4: 73338644638181625302637976392872249625279126748435
+Event Details: {
+  blockNumber: 19530430,
+  blockHash: '0x90471dd63eea9590bda4338ab93713b22722fd55546dc14a04ab6ae7f08b1a78',
+  transactionIndex: 39,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e9578320539692900000000000000000006070040c773d2ddd322a45c8ffd0b6f117d1cd91305a601000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb0000000000000000000000322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0fa3587f901f2a82760eba228790fcd6a7a1f3172b4ee1346ff42d23471dcdb2',
+  logIndex: 176,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929',
+    BigNumber {
+      _hex: '0x06070040c773d2ddd322a45c8ffd0b6f117d1cd91305a6',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x01000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+      _isBigNumber: true
+    },
+    orderHash: '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x06070040c773d2ddd322a45c8ffd0b6f117d1cd91305a6',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x01000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929
+Parameter 2: 839206301991850397124095171561981915502103791328757158
+Parameter 3: 452312848627111437493251248904324857404741556448663231078883777092052483051
+Parameter 4: 73338644638181625302637976392872249625279126748435
+Event Details: {
+  blockNumber: 19530430,
+  blockHash: '0x90471dd63eea9590bda4338ab93713b22722fd55546dc14a04ab6ae7f08b1a78',
+  transactionIndex: 39,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e9578320539692900000000000000000008c30040c773d2ddd322a45c8ffd0b6f117d1cd91305a601000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb0000000000000000000000322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x0fa3587f901f2a82760eba228790fcd6a7a1f3172b4ee1346ff42d23471dcdb2',
+  logIndex: 177,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929',
+    BigNumber {
+      _hex: '0x08c30040c773d2ddd322a45c8ffd0b6f117d1cd91305a6',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x01000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+      _isBigNumber: true
+    },
+    orderHash: '0x78c480c7811c09f56325da85847c88d1265f1074a4093a341e95783205396929',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x08c30040c773d2ddd322a45c8ffd0b6f117d1cd91305a6',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x01000000006a94d74f430000cc98265cd2e662965eee82a6f71cd1550a427beb',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x322e2a903cdd470cc8b296c295b25a6c6212eebd13',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x4faf2d26a805e96c1b043510839f681c98551ed4185ac59fb7029758c3d8a9e9
+Parameter 2: 4360280011938998950760780276940705734977315616806793437
+Parameter 3: 452312849255557141545539503606564251343745656995816817623170833955549575278
+Parameter 4: 73648130741481908191907742087548943491244446633463
+Event Details: {
+  blockNumber: 19530432,
+  blockHash: '0x6cdebcd3fcac4afd16e15aa41866fa5a4118598a1d310d3e13d9eee35deaf43a',
+  transactionIndex: 99,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x4faf2d26a805e96c1b043510839f681c98551ed4185ac59fb7029758c3d8a9e90000000000000000002d8600a69833b9fda816f1bfc79517e7932e64708df0dd0100000006623f9014ae0000b6a37b5d14d502c3ab0ae6f3a0e058bc9517786e000000000000000000000032646066781544aa5c4ea3d4af690eda73125ecdf7',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x9a11069435b0e51398cd8e1653756a8c973a67a1aad665ecef02236e0e0762ff',
+  logIndex: 222,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x4faf2d26a805e96c1b043510839f681c98551ed4185ac59fb7029758c3d8a9e9',
+    BigNumber {
+      _hex: '0x2d8600a69833b9fda816f1bfc79517e7932e64708df0dd',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000006623f9014ae0000b6a37b5d14d502c3ab0ae6f3a0e058bc9517786e',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32646066781544aa5c4ea3d4af690eda73125ecdf7',
+      _isBigNumber: true
+    },
+    orderHash: '0x4faf2d26a805e96c1b043510839f681c98551ed4185ac59fb7029758c3d8a9e9',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x2d8600a69833b9fda816f1bfc79517e7932e64708df0dd',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000006623f9014ae0000b6a37b5d14d502c3ab0ae6f3a0e058bc9517786e',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32646066781544aa5c4ea3d4af690eda73125ecdf7',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0xd00aafaf8e869c963752b817a92ff166541f26fc63dee5ef8f06cd10724cdf14
+Parameter 2: 4921122321615890939852014433681170672328985782034125886
+Parameter 3: 452312849255557141545539503606564251343745656995816817623170833955549575278
+Parameter 4: 73648130741481908191907742087548943491244446633463
+Event Details: {
+  blockNumber: 19530433,
+  blockHash: '0xe6475ea675768d8853a11d06f7b0b3281830929dfca012c50fb62ec4a645aab6',
+  transactionIndex: 32,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0xd00aafaf8e869c963752b817a92ff166541f26fc63dee5ef8f06cd10724cdf1400000000000000000033610088011e1e335e4dde0eb0dc37d23c57bdd00c543e0100000006623f9014ae0000b6a37b5d14d502c3ab0ae6f3a0e058bc9517786e000000000000000000000032646066781544aa5c4ea3d4af690eda73125ecdf7',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0xa17a1f98d0c3cb7fd26efc80b90b8a00c4bc312f71fd8dba5ac3d24739b32ec2',
+  logIndex: 105,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0xd00aafaf8e869c963752b817a92ff166541f26fc63dee5ef8f06cd10724cdf14',
+    BigNumber {
+      _hex: '0x33610088011e1e335e4dde0eb0dc37d23c57bdd00c543e',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000006623f9014ae0000b6a37b5d14d502c3ab0ae6f3a0e058bc9517786e',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x32646066781544aa5c4ea3d4af690eda73125ecdf7',
+      _isBigNumber: true
+    },
+    orderHash: '0xd00aafaf8e869c963752b817a92ff166541f26fc63dee5ef8f06cd10724cdf14',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x33610088011e1e335e4dde0eb0dc37d23c57bdd00c543e',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000006623f9014ae0000b6a37b5d14d502c3ab0ae6f3a0e058bc9517786e',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x32646066781544aa5c4ea3d4af690eda73125ecdf7',
+      _isBigNumber: true
+    }
+  ]
+}
+Execution721TakerFeePacked event detected:
+Parameter 1: 0x2bfb00394711f4dca5373cc7adbe3d93c72d41e0e3a2ecc63bbf3bce46c548ac
+Parameter 2: 215133649751802491759779140088471662377556364280786162
+Parameter 3: 452312848670956486613178336381492322271373083181839982936147667159869031263
+Parameter 4: 73566037158208855993976028232116119016988641164268
+Event Details: {
+  blockNumber: 19530435,
+  blockHash: '0xce22bf72499a6078d575e1bb903b5d8b0e53732555050280eb177c23bb84a869',
+  transactionIndex: 133,
+  removed: false,
+  address: '0xb2ecfE4E4D61f8790bbb9DE2D1259B9e2410CEA5',
+  data: '0x2bfb00394711f4dca5373cc7adbe3d93c72d41e0e3a2ecc63bbf3bce46c548ac000000000000000000023f006aa0b2891c3baa6c134efc7aa5b18747bc9cecf20100000000d529ae9e860000c084a29dd0c9436568435938b1c6c5af4f5c035f00000000000000000000003255ff3259a47ad4fbea1934275dada84608817bec',
+  topics: [
+    '0x0fcf17fac114131b10f37b183c6a60f905911e52802caeeb3e6ea210398b81ab'
+  ],
+  transactionHash: '0x7eaf3d650366dae7b726091fbfb0fad8bbfd6818b31d4c4356259863f006df1c',
+  logIndex: 311,
+  removeListener: [Function (anonymous)],
+  getBlock: [Function (anonymous)],
+  getTransaction: [Function (anonymous)],
+  getTransactionReceipt: [Function (anonymous)],
+  event: 'Execution721TakerFeePacked',
+  eventSignature: 'Execution721TakerFeePacked(bytes32,uint256,uint256,uint256)',
+  decode: [Function (anonymous)],
+  args: [
+    '0x2bfb00394711f4dca5373cc7adbe3d93c72d41e0e3a2ecc63bbf3bce46c548ac',
+    BigNumber {
+      _hex: '0x023f006aa0b2891c3baa6c134efc7aa5b18747bc9cecf2',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x0100000000d529ae9e860000c084a29dd0c9436568435938b1c6c5af4f5c035f',
+      _isBigNumber: true
+    },
+    BigNumber {
+      _hex: '0x3255ff3259a47ad4fbea1934275dada84608817bec',
+      _isBigNumber: true
+    },
+    orderHash: '0x2bfb00394711f4dca5373cc7adbe3d93c72d41e0e3a2ecc63bbf3bce46c548ac',
+    tokenIdListingIndexTrader: BigNumber {
+      _hex: '0x023f006aa0b2891c3baa6c134efc7aa5b18747bc9cecf2',
+      _isBigNumber: true
+    },
+    collectionPriceSide: BigNumber {
+      _hex: '0x0100000000d529ae9e860000c084a29dd0c9436568435938b1c6c5af4f5c035f',
+      _isBigNumber: true
+    },
+    takerFeeRecipientRate: BigNumber {
+      _hex: '0x3255ff3259a47ad4fbea1934275dada84608817bec',
+      _isBigNumber: true
+    }
+  ]
+}
