@@ -93,7 +93,7 @@ const searchImg = async (token, id) => {
         const res = await fetch(url, { method: "GET", headers: headers });
         const jsonRes = await res.json();
         const img = (jsonRes.nft.display_image_url == "" ? './no-image.png' : jsonRes.nft.display_image_url);
-        const slug = jsonRes.nft.collection;    
+        const slug = jsonRes.nft.collection;
         // console.log(img, slug);
         return {
             image: img,
@@ -136,76 +136,84 @@ const getSlug = async (tokenAddress, tokenId) => {
 }
 
 const checkAvailableEthTokens = async (owner, tokenAddress, tokenId) => {
-    const slug = await getSlug(tokenAddress, tokenId)
-    const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`
-    const headers = {
-        "accept": "application/json",
-        "x-api-key": '09477efc289442239b1d5940775b0780'
-    }
-    const response = await fetch(url, { method: "GET", headers: headers })
-    const resp = await response.json()
-    const nfts = resp.nfts
     let nftList = []
-    if (nfts && nfts.length > 0) {
-        // console.log(nfts);
-        console.log("Found NFTs")
-        for (const nft of nfts) {
-            nftList.push(
-                {
-                    name: nft.identifier,
-                    image: nft.display_image_url,
-                    link: nft.opensea_url
-                }
-            )
+    try {
+        const slug = await getSlug(tokenAddress, tokenId)
+        const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`
+        const headers = {
+            "accept": "application/json",
+            "x-api-key": '09477efc289442239b1d5940775b0780'
         }
-        console.log(nftList);
-    let apiIndex = 0
-    let tasks = []
-    
-        return nftList
-    } else {
+        const response = await fetch(url, { method: "GET", headers: headers })
+        const resp = await response.json()
+        const nfts = resp.nfts
+        if (nfts && nfts.length > 0) {
+            // console.log(nfts);
+            console.log("Found NFTs")
+            for (const nft of nfts) {
+                nftList.push(
+                    {
+                        name: nft.identifier,
+                        image: nft.display_image_url,
+                        link: nft.opensea_url
+                    }
+                )
+            }
+            console.log(nftList);
+            return nftList
+        } else {
+            return nftList
+        }
+    } catch (e) {
+        console.log(e);
         return nftList
     }
 }
 
 const checkAvailableAliasEthTokens = async (owner, slug) => {
     for (let i = 0; i < data.length; i++) {
-        if (data[i].includes(slug)) {
-            let apiIndex = 0
-            let bigNFTList = []
-            for (let j = 0; j < data[i].length; j++) {
-                if (data[i][j] !== slug) {
-                    if (apiIndex >= apiData.length) {
-                        apiIndex = 0;
-                    }
-                    let api = apiData[apiIndex]
-                    const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${data[i][j]}`
-                    const headers = {
-                        "accept": "application/json",
-                        "x-api-key": api
-                    }
-                    const response = await fetch(url, { method: "GET", headers: headers })
-                    const resp = await response.json()
-                    const nfts = resp.nfts
-                    if (nfts && nfts.length > 0) {
-                        // console.log(nfts);
-                        console.log("Found NFTs")
-                        let nftList = []
-                        for (const nft of nfts) {
-                            bigNFTList.push(
-                                {
-                                    alias: data[i][j],
-                                    name: nft.identifier,
-                                    link: nft.opensea_url
-                                }
-                            )
+        let bigNFTList = []
+        try {
+            if (data[i].includes(slug)) {
+                let apiIndex = 0
+                for (let j = 0; j < data[i].length; j++) {
+                    if (data[i][j] !== slug) {
+                        if (apiIndex >= apiData.length) {
+                            apiIndex = 0;
                         }
+                        let api = apiData[apiIndex]
+                        const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${data[i][j]}`
+                        const headers = {
+                            "accept": "application/json",
+                            "x-api-key": api
+                        }
+                        const response = await fetch(url, { method: "GET", headers: headers })
+                        const resp = await response.json()
+                        const nfts = resp.nfts
+                        if (nfts && nfts.length > 0) {
+                            // console.log(nfts);
+                            console.log("Found NFTs")
+                            let nftList = []
+                            for (const nft of nfts) {
+                                bigNFTList.push(
+                                    {
+                                        alias: data[i][j],
+                                        name: nft.identifier,
+                                        link: nft.opensea_url
+                                    }
+                                )
+                            }
+                        }
+                        apiIndex += 1;
                     }
-                    apiIndex += 1;
                 }
+                console.log(bigNFTList);
+                return bigNFTList;
+            } else {
+                return bigNFTList
             }
-            console.log(bigNFTList);
-            return bigNFTList;
+        } catch (e) {
+            return bigNFTList
         }
     }
 }
