@@ -135,10 +135,10 @@ const getSlug = async (tokenAddress, tokenId) => {
     return slug
 }
 
-const checkAvailableEthTokens = async (owner, tokenAddress, tokenId) => {
+const checkAvailableEthTokens = async (owner, slug) => {
     let nftList = []
     try {
-        const slug = await getSlug(tokenAddress, tokenId)
+        // const slug = await getSlug(tokenAddress, tokenId)
         const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`
         const headers = {
             "accept": "application/json",
@@ -259,10 +259,8 @@ const osTrack = async () => {
                     if (exactEventTime + 10 >= now && Number(event.payload.sale_price) / 1e18 > minPrice) {
                         console.log(`Found OpenSea Dump`);
                         let nftEmbeds = []
-                        const tokenItems = event.payload.item.nft_id.split("/")
-                        const tokenAddress = tokenItems[1]
-                        const tokenId = tokenItems[2]
-                        const remaining = await checkAvailableEthTokens(event.payload.maker.address, tokenAddress, tokenId)
+                        const slug = event.payload.collection.slug
+                        const remaining = await checkAvailableEthTokens(event.payload.maker.address, slug)
                         const remainingAlias = await checkAvailableAliasEthTokens(event.payload.maker.address, event.payload.collection.slug)
                         let remainingValue = ``
                         if (remaining && remaining.length > 0) {
