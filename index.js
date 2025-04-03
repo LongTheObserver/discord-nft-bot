@@ -127,7 +127,7 @@ const getSlug = async (tokenAddress, tokenId) => {
     const url = `https://api.opensea.io/api/v2/chain/ethereum/contract/${tokenAddress}/nfts/${tokenId}`
     const headers = {
         "accept": "application/json",
-        "x-api-key": '9768474fec6c41588c00faa47fce8cae'
+        "x-api-key": 'cb9be61888a845b983e7c3db70c13a18'
     }
     const response = await fetch(url, { method: "GET", headers: headers })
     const resp = await response.json()
@@ -142,7 +142,7 @@ const checkAvailableEthTokens = async (owner, tokenAddress, tokenId) => {
         const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`
         const headers = {
             "accept": "application/json",
-            "x-api-key": '09477efc289442239b1d5940775b0780'
+            "x-api-key": '40d30843522f45fea8ef399cda5bb464'
         }
         const response = await fetch(url, { method: "GET", headers: headers })
         const resp = await response.json()
