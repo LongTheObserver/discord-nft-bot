@@ -88,7 +88,7 @@ const searchImg = async (token, id) => {
         const url = `https://api.opensea.io/api/v2/chain/ethereum/contract/${token}/nfts/${id}`;
         const headers = {
             "accept": "application/json",
-            "x-api-key": '9768474fec6c41588c00faa47fce8cae'
+            "x-api-key": 'cb9be61888a845b983e7c3db70c13a18'
         }
         const res = await fetch(url, { method: "GET", headers: headers });
         const jsonRes = await res.json();
@@ -165,7 +165,7 @@ const checkAvailableEthTokens = async (owner, tokenAddress, tokenId) => {
             return nftList
         }
     } catch (e) {
-        console.log(e);
+        console.log("Could not get remaining tokens due to error: ", e);
         return nftList
     }
 }
@@ -210,9 +210,11 @@ const checkAvailableAliasEthTokens = async (owner, slug) => {
                 console.log(bigNFTList);
                 return bigNFTList;
             } else {
+                console.log("No alias found for the collection: ", slug);
                 return bigNFTList
             }
         } catch (e) {
+            console.log("Could not get the alias due to error: ", e);
             return bigNFTList
         }
     }
