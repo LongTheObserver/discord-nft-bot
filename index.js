@@ -797,7 +797,8 @@ async function fetchTensorSellTx(txId, connection) {
     // console.log(tx);
     // fs.writeFileSync('log2.json', JSON.stringify(tx, 2, 2))
 
-    const accounts = tx?.transaction.message.instructions.find(ix => ix.programId.toBase58() === TENSOR_PUBLIC_KEY).accounts;
+    // const accounts = tx?.transaction.message.instructions.find(ix => ix.programId.toBase58() === TENSOR_PUBLIC_KEY).accounts;
+    const accounts = tx?.transaction.messsage.getAccountKeys().staticAccountKeys;
     // console.log(accounts);
     if (!accounts) {
         console.log("No accounts found in the transaction.");
