@@ -174,8 +174,8 @@ const checkAvailableEthTokens = async (owner, slug, maxRetries = 3, delay = 500)
             console.error(`Error on attempt ${attempt}: ${e.message}`);
 
             if (attempt < maxRetries) {
-                console.log(`Retrying in ${delay}ms...`);
-                await new Promise(res => setTimeout(res, delay));
+                console.log(`Retrying in ${currentDelay}ms...`);
+                await new Promise(res => setTimeout(res, currentDelay));
                 currentDelay *= 2; // Exponential backoff (double the delay each time)
             } else {
                 console.log("Max retries reached. Returning empty list.");
