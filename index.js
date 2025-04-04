@@ -135,40 +135,90 @@ const getSlug = async (tokenAddress, tokenId) => {
     return slug
 }
 
-const checkAvailableEthTokens = async (owner, slug) => {
-    let nftList = []
-    try {
-        // const slug = await getSlug(tokenAddress, tokenId)
-        const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`
-        const headers = {
-            "accept": "application/json",
-            "x-api-key": '40d30843522f45fea8ef399cda5bb464'
-        }
-        const response = await fetch(url, { method: "GET", headers: headers })
-        const resp = await response.json()
-        const nfts = resp.nfts
-        if (nfts && nfts.length > 0) {
-            // console.log(nfts);
-            console.log("Found NFTs")
-            for (const nft of nfts) {
-                nftList.push(
-                    {
+const checkAvailableEthTokens = async (owner, slug, maxRetries = 3, delay = 500) => {
+    let nftList = [];
+    const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`;
+
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+            const apiIndex = Math.floor(Math.random() * apiData.length)
+            const key = apiData[apiIndex]
+            const headers = {
+                "accept": "application/json",
+                "x-api-key": key
+            };
+            console.log(`Attempt ${attempt} to fetch NFTs...`);
+            const response = await fetch(url, { method: "GET", headers: headers });
+
+            if (!response.ok) {
+                throw new Error(`HTTP Error! Status: ${response.status}`);
+            }
+
+            const resp = await response.json();
+            const nfts = resp.nfts;
+
+            if (nfts && nfts.length > 0) {
+                console.log("Found NFTs");
+                for (const nft of nfts) {
+                    nftList.push({
                         name: nft.identifier,
                         image: nft.display_image_url,
                         link: nft.opensea_url
-                    }
-                )
+                    });
+                }
             }
-            console.log(nftList);
-            return nftList
-        } else {
-            return nftList
+
+            return nftList; // Success, return result immediately
+
+        } catch (e) {
+            console.error(`Error on attempt ${attempt}: ${e.message}`);
+
+            if (attempt < maxRetries) {
+                console.log(`Retrying in ${delay}ms...`);
+                await new Promise(res => setTimeout(res, delay));
+                delay *= 2; // Exponential backoff (double the delay each time)
+            } else {
+                console.log("Max retries reached. Returning empty list.");
+                return nftList; // Return empty array if all retries fail
+            }
         }
-    } catch (e) {
-        console.log("Could not get remaining tokens due to error: ", e);
-        return nftList
     }
-}
+};
+
+// const checkAvailableEthTokens = async (owner, slug) => {
+//     let nftList = []
+//     try {
+//         // const slug = await getSlug(tokenAddress, tokenId)
+//         const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`
+//         const headers = {
+//             "accept": "application/json",
+//             "x-api-key": '40d30843522f45fea8ef399cda5bb464'
+//         }
+//         const response = await fetch(url, { method: "GET", headers: headers })
+//         const resp = await response.json()
+//         const nfts = resp.nfts
+//         if (nfts && nfts.length > 0) {
+//             // console.log(nfts);
+//             console.log("Found NFTs")
+//             for (const nft of nfts) {
+//                 nftList.push(
+//                     {
+//                         name: nft.identifier,
+//                         image: nft.display_image_url,
+//                         link: nft.opensea_url
+//                     }
+//                 )
+//             }
+//             console.log(nftList);
+//             return nftList
+//         } else {
+//             return nftList
+//         }
+//     } catch (e) {
+//         console.log("Could not get remaining tokens due to error: ", e);
+//         return nftList
+//     }
+// }
 
 const checkAvailableAliasEthTokens = async (owner, slug) => {
     for (let i = 0; i < data.length; i++) {
