@@ -138,7 +138,7 @@ const getSlug = async (tokenAddress, tokenId) => {
 const checkAvailableEthTokens = async (owner, slug, maxRetries = 3, delay = 500) => {
     let nftList = [];
     const url = `https://api.opensea.io/api/v2/chain/ethereum/account/${owner}/nfts?collection=${slug}`;
-
+    let currentDelay = delay; // Use a separate variable for backoff delay
     for (let attempt = 1; attempt <= maxRetries; attempt++) {
         try {
             const apiIndex = Math.floor(Math.random() * apiData.length)
@@ -176,7 +176,7 @@ const checkAvailableEthTokens = async (owner, slug, maxRetries = 3, delay = 500)
             if (attempt < maxRetries) {
                 console.log(`Retrying in ${delay}ms...`);
                 await new Promise(res => setTimeout(res, delay));
-                delay *= 2; // Exponential backoff (double the delay each time)
+                currentDelay *= 2; // Exponential backoff (double the delay each time)
             } else {
                 console.log("Max retries reached. Returning empty list.");
                 return nftList; // Return empty array if all retries fail
