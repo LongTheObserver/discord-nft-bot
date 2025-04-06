@@ -85,10 +85,12 @@ let blurHashes = [];
 // Search NFT image on OpenSea:
 const searchImg = async (token, id) => {
     try {
+        const apiIndex = Math.floor(Math.random() * apiData.length)
+        const key = apiData[apiIndex]
         const url = `https://api.opensea.io/api/v2/chain/ethereum/contract/${token}/nfts/${id}`;
         const headers = {
             "accept": "application/json",
-            "x-api-key": 'cb9be61888a845b983e7c3db70c13a18'
+            "x-api-key": key
         }
         const res = await fetch(url, { method: "GET", headers: headers });
         const jsonRes = await res.json();
@@ -525,7 +527,7 @@ const handleBlurMessageFromTx = async (tx) => {
             let tokenAddress = decodedArgs[0][0][1].toLowerCase()
             let tokenId = decodedArgs[0][1][3][0]
             let price = Number(decodedArgs[0][1][2][3]) / 1e18
-            if (price > minPrice) {
+            if (price >= minPrice) {
                 let image = await searchImg(tokenAddress, tokenId)
                 const embedMessage = await buildBlurEmbeddedMessage(from, to, tokenAddress, tokenId, price, hash, image.image)
                 await discordClient.channels.cache.get(blurChannelId).send({
@@ -546,7 +548,7 @@ const handleBlurMessageFromTx = async (tx) => {
                     transaction["amount"] = price
                     transaction["hash"] = tx.hash
                     let image = await searchImg(tokenAddress, tokenId)
-                    if (Number(decodedArgs[0][1][j][0]) == i && price > minPrice) {
+                    if (Number(decodedArgs[0][1][j][0]) == i && price >= minPrice) {
                         const embedMessage = await buildBlurEmbeddedMessage(from, to, tokenAddress, tokenId, price, hash, image.image)
                         await discordClient.channels.cache.get(blurChannelId).send({
                             embeds: embedMessage
