@@ -304,38 +304,23 @@ const osTrack = async () => {
     try {
         client.onEvents('*',
             [EventType.ITEM_SOLD], async (event) => {
-                if (event.payload.payment_token.symbol == "WETH") {
-                    let isoEventTime = new Date(event.payload.event_timestamp)
-                    let eventTime = isoEventTime.getTime()
-                    let exactEventTime = Math.floor(eventTime / 1000)
-                    let now = Math.floor(Date.now() / 1000)
-                    // console.log(exactEventTime, DURATION, now);
-                    if (exactEventTime + 10 >= now && Number(event.payload.sale_price) / 1e18 > minPrice) {
-                        console.log(`Found OpenSea Dump`);
-                        let nftEmbeds = []
-                        const slug = event.payload.collection.slug
-                        const remaining = await checkAvailableEthTokens(event.payload.maker.address, slug)
-                        const remainingAlias = await checkAvailableAliasEthTokens(event.payload.maker.address, event.payload.collection.slug)
-                        let remainingValue = ``
-                        if (remaining && remaining.length > 0) {
-                            //totalEmbeds.push(remainingEmbedTitle)
-                            if (remaining.length + remainingAlias.length < 9) {
-                                for (let i = 0; i < remaining.length; i++) {
-                                    let remainingEmbed = new EmbedBuilder()
-                                        .setImage(remaining[i].image)
-                                        .setURL(event.payload.item.permalink)
-                                    nftEmbeds.push(remainingEmbed)
-                                    remainingValue += `[${remaining[i].name}](${remaining[i].link}),\n`
-                                }
-                                if (remainingAlias.length > 0) {
-                                    for (let j = 0; j < remainingAlias.length; j++) {
-                                        remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
-                                    }
-                                } else {
-                                    remainingValue += `Alias: Empty`
-                                }
-                            } else {
-                                if (remaining.length <= 5) {
+                if (event.payload.item.chain.name == "ethereum") {
+                    if (event.payload.payment_token.symbol == "WETH") {
+                        let isoEventTime = new Date(event.payload.event_timestamp)
+                        let eventTime = isoEventTime.getTime()
+                        let exactEventTime = Math.floor(eventTime / 1000)
+                        let now = Math.floor(Date.now() / 1000)
+                        // console.log(exactEventTime, DURATION, now);
+                        if (exactEventTime + 10 >= now && Number(event.payload.sale_price) / 1e18 > minPrice) {
+                            console.log(`Found OpenSea Dump`);
+                            let nftEmbeds = []
+                            const slug = event.payload.collection.slug
+                            const remaining = await checkAvailableEthTokens(event.payload.maker.address, slug)
+                            const remainingAlias = await checkAvailableAliasEthTokens(event.payload.maker.address, event.payload.collection.slug)
+                            let remainingValue = ``
+                            if (remaining && remaining.length > 0) {
+                                //totalEmbeds.push(remainingEmbedTitle)
+                                if (remaining.length + remainingAlias.length < 9) {
                                     for (let i = 0; i < remaining.length; i++) {
                                         let remainingEmbed = new EmbedBuilder()
                                             .setImage(remaining[i].image)
@@ -343,92 +328,109 @@ const osTrack = async () => {
                                         nftEmbeds.push(remainingEmbed)
                                         remainingValue += `[${remaining[i].name}](${remaining[i].link}),\n`
                                     }
-                                    for (let j = 0; j < 9 - remaining.length; j++) {
-                                        remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
-                                    }
-                                    remainingValue += `...`
-                                } else {
-                                    for (let i = 0; i < 5; i++) {
-                                        let remainingEmbed = new EmbedBuilder()
-                                            .setImage(remaining[i].image)
-                                            .setURL(event.payload.item.permalink)
-                                        nftEmbeds.push(remainingEmbed)
-                                        remainingValue += `[${remaining[i].name}](${remaining[i].link}),\n`
-                                    }
-                                    if (remainingAlias.length > 4) {
-                                        for (let j = 0; j < 4; j++) {
+                                    if (remainingAlias.length > 0) {
+                                        for (let j = 0; j < remainingAlias.length; j++) {
                                             remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
                                         }
+                                    } else {
+                                        remainingValue += `Alias: Empty`
+                                    }
+                                } else {
+                                    if (remaining.length <= 5) {
+                                        for (let i = 0; i < remaining.length; i++) {
+                                            let remainingEmbed = new EmbedBuilder()
+                                                .setImage(remaining[i].image)
+                                                .setURL(event.payload.item.permalink)
+                                            nftEmbeds.push(remainingEmbed)
+                                            remainingValue += `[${remaining[i].name}](${remaining[i].link}),\n`
+                                        }
+                                        for (let j = 0; j < 9 - remaining.length; j++) {
+                                            remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
+                                        }
+                                        remainingValue += `...`
+                                    } else {
+                                        for (let i = 0; i < 5; i++) {
+                                            let remainingEmbed = new EmbedBuilder()
+                                                .setImage(remaining[i].image)
+                                                .setURL(event.payload.item.permalink)
+                                            nftEmbeds.push(remainingEmbed)
+                                            remainingValue += `[${remaining[i].name}](${remaining[i].link}),\n`
+                                        }
+                                        if (remainingAlias.length > 4) {
+                                            for (let j = 0; j < 4; j++) {
+                                                remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
+                                            }
+                                        } else {
+                                            for (let j = 0; j < remainingAlias.length; j++) {
+                                                remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
+                                            }
+                                        }
+                                        remainingValue += `...`
+                                    }
+                                }
+                            } else {
+                                if (remainingAlias.length > 0) {
+                                    if (remainingAlias.length > 9) {
+                                        for (let j = 0; j < 9; j++) {
+                                            remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
+                                        }
+                                        remainingValue += `...`
                                     } else {
                                         for (let j = 0; j < remainingAlias.length; j++) {
                                             remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
                                         }
                                     }
-                                    remainingValue += `...`
-                                }
-                            }
-                        } else {
-                            if (remainingAlias.length > 0) {
-                                if (remainingAlias.length > 9) {
-                                    for (let j = 0; j < 9; j++) {
-                                        remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
-                                    }
-                                    remainingValue += `...`
                                 } else {
-                                    for (let j = 0; j < remainingAlias.length; j++) {
-                                        remainingValue += `Alias: ${remainingAlias[j].alias} ` + `[${remainingAlias[j].name}](${remainingAlias[j].link}),\n`
-                                    }
+                                    remainingValue += "Empty"
                                 }
-                            } else {
-                                remainingValue += "Empty"
                             }
+                            const embedMessage = new EmbedBuilder()
+                                .setTitle("OPENSEA DUMP NOTIFICATION")
+                                .setURL(event.payload.item.permalink)
+                                .setColor(0x18e1ee)
+                                .setTimestamp(Date.now())
+                                .setAuthor({
+                                    url: 'https://twitter.com/longsensei1992',
+                                    iconURL: 'https://pbs.twimg.com/profile_images/1709114338634858496/-utQ4UHv_400x400.jpg',
+                                    name: 'Cute_Louise'
+                                })
+                                .setFooter({
+                                    iconURL: 'https://pbs.twimg.com/profile_images/1709114338634858496/-utQ4UHv_400x400.jpg',
+                                    text: 'Powered by Cute_Louise'
+                                })
+                                .setImage(event.payload.item.metadata.image_url)
+                                .addFields(
+                                    {
+                                        name: 'item',
+                                        value: `[${event.payload.item.metadata.name}](${event.payload.item.permalink})`,
+                                        inline: true
+                                    },
+                                    {
+                                        name: 'price',
+                                        value: `${Number(event.payload.sale_price) / 1e18} ` + 'WETH',
+                                        inline: true
+                                    },
+                                    {
+                                        name: 'from',
+                                        value: `[${event.payload.maker.address}](https://opensea.io/${event.payload.maker.address})`,
+                                        inline: false
+                                    },
+                                    {
+                                        name: 'to',
+                                        value: `[${event.payload.taker.address}](https://opensea.io/${event.payload.taker.address})`,
+                                        inline: false
+                                    },
+                                    {
+                                        name: 'Remaining NFTs',
+                                        value: remainingValue,
+                                        inline: false
+                                    }
+                                )
+                            nftEmbeds.unshift(embedMessage)
+                            await discordClient.channels.cache.get(osChannelId).send({
+                                embeds: nftEmbeds
+                            })
                         }
-                        const embedMessage = new EmbedBuilder()
-                            .setTitle("OPENSEA DUMP NOTIFICATION")
-                            .setURL(event.payload.item.permalink)
-                            .setColor(0x18e1ee)
-                            .setTimestamp(Date.now())
-                            .setAuthor({
-                                url: 'https://twitter.com/longsensei1992',
-                                iconURL: 'https://pbs.twimg.com/profile_images/1709114338634858496/-utQ4UHv_400x400.jpg',
-                                name: 'Cute_Louise'
-                            })
-                            .setFooter({
-                                iconURL: 'https://pbs.twimg.com/profile_images/1709114338634858496/-utQ4UHv_400x400.jpg',
-                                text: 'Powered by Cute_Louise'
-                            })
-                            .setImage(event.payload.item.metadata.image_url)
-                            .addFields(
-                                {
-                                    name: 'item',
-                                    value: `[${event.payload.item.metadata.name}](${event.payload.item.permalink})`,
-                                    inline: true
-                                },
-                                {
-                                    name: 'price',
-                                    value: `${Number(event.payload.sale_price) / 1e18} ` + 'WETH',
-                                    inline: true
-                                },
-                                {
-                                    name: 'from',
-                                    value: `[${event.payload.maker.address}](https://opensea.io/${event.payload.maker.address})`,
-                                    inline: false
-                                },
-                                {
-                                    name: 'to',
-                                    value: `[${event.payload.taker.address}](https://opensea.io/${event.payload.taker.address})`,
-                                    inline: false
-                                },
-                                {
-                                    name: 'Remaining NFTs',
-                                    value: remainingValue,
-                                    inline: false
-                                }
-                            )
-                        nftEmbeds.unshift(embedMessage)
-                        await discordClient.channels.cache.get(osChannelId).send({
-                            embeds: nftEmbeds
-                        })
                     }
                 }
             })
