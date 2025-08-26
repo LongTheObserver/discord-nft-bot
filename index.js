@@ -304,7 +304,7 @@ const osTrack = async () => {
     try {
         client.onEvents('*',
             [EventType.ITEM_SOLD], async (event) => {
-                if (event.payload.item.chain.name == "ethereum") {
+                // if (event.payload.item.chain.name == "ethereum") {
                     if (event.payload.payment_token.symbol == "WETH") {
                         let isoEventTime = new Date(event.payload.event_timestamp)
                         let eventTime = isoEventTime.getTime()
@@ -432,7 +432,7 @@ const osTrack = async () => {
                             })
                         }
                     }
-                }
+                // }
             })
     } catch (e) {
         console.log(JSON.stringify(e));
