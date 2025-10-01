@@ -305,13 +305,15 @@ const osTrack = async () => {
         client.onEvents('*',
             [EventType.ITEM_SOLD], async (event) => {
                 // if (event.payload.item.chain.name == "ethereum") {
-                    if (event.payload.payment_token.symbol == "WETH") {
+                    if (event.payload.payment_token.symbol == "WETH" && event.payload.item.chain.name == "ethereum") {
                         let isoEventTime = new Date(event.payload.event_timestamp)
                         let eventTime = isoEventTime.getTime()
                         let exactEventTime = Math.floor(eventTime / 1000)
                         let now = Math.floor(Date.now() / 1000)
                         // console.log(exactEventTime, DURATION, now);
-                        if (exactEventTime + 10 >= now && Number(event.payload.sale_price) / 1e18 > minPrice) {
+                        if (
+                            // exactEventTime + 10 >= now && 
+                            Number(event.payload.sale_price) / 1e18 > minPrice) {
                             console.log(`Found OpenSea Dump`);
                             let nftEmbeds = []
                             const slug = event.payload.collection.slug
